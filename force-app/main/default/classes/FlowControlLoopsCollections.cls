@@ -209,13 +209,12 @@ public with sharing class FlowControlLoopsCollections {
         // Initialize the result String
 
         // Use a for loop to append 'Hello World!;' to the result string three times
-        /* 
-         for (){
-            
+        String Sum;
+         for (Integer count=0;count<=2;count+=1){
+            Sum=Sum+'Hello World!';
          }
-        */
 
-        return null; // Replace null with the variable you used to store the result
+        return Sum; // Replace null with the variable you used to store the result
     }
 
     /**
