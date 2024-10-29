@@ -227,20 +227,21 @@ public with sharing class FlowControlLoopsCollections {
      * @param repeatCount The number of times the string should be repeated.
      * @return The new string with the inputString repeated repeatCount times.
      */
-    public static String repeatString(String inputString, Integer repeatCount) {
-        // Initialize the result String
-
-        // Use a for loop to append the inputString to the result string repeatCount times
-        /*
-        for () {
-
-            // If it is not the last iteration, add a semicolon to separate the strings
+    
+        public static String repeatString(String inputString, Integer repeatCount) {
+         // Initialize the result String
+         String result='';
+         // Use a for loop to append the inputString to the result string repeatCount times
+         
+         for (Integer count=1;count<repeatCount;count++) {
+             result=result+inputString+'; ';
+             // If it is not the last iteration, add a semicolon to separate the strings
+         }
+            if(repeatCount>0){
+                result=result+inputString;
+            }
+            return result;
         }
-        */
-
-        // Return the final result string
-        return null; // Replace null with the variable you used to store the result
-    }
 
     /**
      * Question 11
