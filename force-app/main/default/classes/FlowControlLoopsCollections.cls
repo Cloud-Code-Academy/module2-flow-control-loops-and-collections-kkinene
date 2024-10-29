@@ -108,8 +108,20 @@ public with sharing class FlowControlLoopsCollections {
      * @param a The number to check.
      * @return A string indicating whether the number is "Even" or "Odd", or null if the number is null.
      */
-    public static String checkEvenOdd(Integer a) {
-        return null; // Replace null with the variable you used to store the result
+    public static String checkEvenOdd(Integer numberToBeChecked) {
+        String numIs;
+
+        if(numberToBeChecked==null){
+            return null;
+        }
+        Integer remainder = math.mod(numberToBeChecked,2);
+        If (remainder ==0){
+            numIs='Even';
+        }else If(remainder==1){
+            numIs='Odd';
+        }
+        
+        return numIs; 
     }
 
     /**
