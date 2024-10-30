@@ -337,11 +337,22 @@ public with sharing class FlowControlLoopsCollections {
     public static Integer sumPositiveIntegers() {
         List<Integer> numbers = new List<Integer>{-1, 2, -3, 4, -5, 6}; //DO NOT CHANGE
 
+        Integer count;
+        Integer listSize=0;
+        Integer sum=0;
         // Loop through the list of integers
+              
+        listSize=numbers.size();
+        for(count=0;count<listSize;count++){
             // if the number is negative skip this iteration
-        
+            if(numbers[count]<0){
+                continue;
+            }else {
+                sum=sum+numbers[count];
+            }
+        }
 
-        return null; // Replace null with the variable you used to store the result
+        return sum; // Replace null with the variable you used to store the result
     }
 
     /**
