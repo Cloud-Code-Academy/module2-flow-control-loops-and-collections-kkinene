@@ -365,11 +365,22 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static Integer findWordInList(String wordToFind, List<String> words) {
         // The variable to store the index of the word
+        Integer index=-1;
+        Integer count=0;
+        Integer listSize=0;
 
         // Loop through the list of words
-            // If the current word is the word to find, exit the loop
+        listSize=words.size();
 
-        return null; // Replace null with the variable you used to store the result
+        for(count=0;count<words.size();count+=1){
+            // If the current word is the word to find, exit the loop
+            if(words[count]== wordToFind){
+             return count;   
+            }
+
+        }
+
+                return index; // Replace null with the variable you used to store the result
     }
 
     /**
