@@ -207,11 +207,11 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static String returnHelloWorld() {
         // Initialize the result String
-
+		String Sum='';
         // Use a for loop to append 'Hello World!;' to the result string three times
-        String Sum;
+        
          for (Integer count=0;count<=2;count+=1){
-            Sum=Sum+'Hello World!';
+            Sum=Sum+'Hello World!; ';
          }
 
         return Sum; // Replace null with the variable you used to store the result
